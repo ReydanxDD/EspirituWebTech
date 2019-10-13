@@ -1,0 +1,209 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:15px;
+	line-height: 1.5;
+	padding:0;
+	margin:0;
+	background-color:black;
+}
+
+	/*Global*/
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+	ul{
+		margin:0;
+		padding:0;
+	}
+
+	.dark{
+		padding:15px;
+		background:#35424a;
+		color:#ffffff;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+
+	/*Header*/
+	header{
+		background: #C3C3C3;
+		color:white;
+		text-shadow:2px 2px black;
+		padding-top:30px;
+		min-height:70px;
+		border-bottom:black 3px solid;
+	}
+
+	header a{
+		color:#ffffff;
+		text-decoration:none;
+		text-transform:uppercase;
+		font-size:16px;
+	}
+
+
+	header li{
+		float:left;
+		display: inline;
+		padding: 0 20px 0 20px;
+	}
+
+	header #branding{
+		float:left;
+	}
+
+	header #branding h1{
+		margin:0;
+	}
+
+	header nav{
+		float:right;
+		margin-top:10px;
+	}
+
+	header .current a {
+		color:#5399CF;
+		font-weight:bold;
+	}
+
+	header a:hover{
+		color:#cccccc;
+		font-weight:bold;
+	}
+
+
+	/*showcase*/
+
+	#showcase{
+		min-height:280px;
+		background:url("./success.jpeg") no-repeat 0 -220px;
+		background-size: cover;
+		text-align:center;
+		color:black;
+		text-shadow: 2px 2px white;
+	}
+
+	#showcase h1{
+		margin-top: 100px;
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+
+
+/* boxes */
+
+#boxes{
+	margin:0;
+	background-color:white;
+	font-size: 25px;
+}
+
+#boxes .box{
+	float:left;
+	text-align:center;
+	width:30%;
+	padding:10px;
+}
+
+.box h2{
+	color:black;
+	text-shadow: 1px 1px black;
+	text-decoration:underline;
+}
+
+
+/*body*/
+.box li{
+	display:block;
+	font-size: 20px;
+}
+
+
+/*about*/
+
+
+aside#sidebar{
+	float:right;
+	width: 30%;
+	margin-top:10px;
+}
+
+aside#sidebar .comment textarea{
+	height:100px;
+	width:90%;
+	padding:10px;
+}
+
+.button_1{
+	height:38px;
+	background:#e8491d;
+	width:105%;
+	padding-left: 20px;
+	padding-right: 20px;
+	color:#ffffff;
+
+}
+
+
+article#main-col{
+	float:left;
+	width: 65%;
+}
+
+ul#about li{
+	list-style:none;
+	padding:20px;
+	border:#cccccc solid 1px;
+	margin-bottom: 5px;
+	background:#e6e6e6e6;
+}
+
+
+
+
+footer{
+	padding:20px;
+	margin-top:10px;
+	color:black;
+	background-color:#C3C3C3;
+	text-align:center;
+}
+
+
+/*pangmaliit na device*/
+
+@media(max-width: 768px){
+	header #branding,
+	header nav,
+	header nav li,
+	#boxes .box,
+	article#main-col,
+	aside#sidebar{
+		float:none;
+		text-align:center;
+		width:100%;
+	}
+
+	header{
+		padding-bottom:20px;
+	}
+
+	#showcase h1{
+		margin-top:40px;
+	}
+
+	.comment button{
+		display:block;
+		width:100%;
+	}
+
+	.comment textarea{
+		width:100%;
+		margin-bottom:5px;
+	}
+}
+
+
